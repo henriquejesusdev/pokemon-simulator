@@ -1,0 +1,20 @@
+[project]
+name = "pokemon-simulator"
+version = "0.1.0"
+description = "Simulador de captura de Pokémons usando programação assíncrona"
+authors = [
+    {name = "Henrique Jesus",email = "henrique.jesus128@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+[tool.poetry.scripts]
+pokemon = "pokemon_simulator.main:run"  # Ponto de entrada para o script
+
+[tool.poetry]
+packages = [{include = "pokemon_simulator", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
